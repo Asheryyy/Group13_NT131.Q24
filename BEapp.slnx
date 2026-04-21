@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../Gardens_Test/Gardens_Test.csproj" Id="e747a6cd-2f01-48b6-a63e-5cf9b2b2620f" />
+  <Project Path="BEapp.csproj" />
+</Solution>
