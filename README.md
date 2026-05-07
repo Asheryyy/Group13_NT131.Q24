@@ -88,7 +88,7 @@ Người dùng tùy chỉnh hoạt động của hệ thống:
 - **Firmware:** Arduino Framework (C++)
 - **Backend:** ASP.NET Core 7.0, C#
 - **ORM:** Entity Framework Core
-- **Cơ sở dữ liệu:** SQL Server
+- **Cơ sở dữ liệu:** SSMS
 - **Real-time:** SignalR WebSocket
 - **Ứng dụng di động:** Android (Java/Kotlin)
 - **HTTP Client (Android):** Retrofit2
