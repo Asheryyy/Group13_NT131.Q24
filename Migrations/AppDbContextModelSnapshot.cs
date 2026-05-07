@@ -90,6 +90,33 @@ namespace BEapp.Migrations
                     b.ToTable("HumidityRecords");
                 });
 
+            modelBuilder.Entity("BEapp.Models.Entities.OtpRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ExpiredAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsUsed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("OtpCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OtpRecords");
+                });
+
             modelBuilder.Entity("BEapp.Models.Entities.PumpLog", b =>
                 {
                     b.Property<int>("Id")

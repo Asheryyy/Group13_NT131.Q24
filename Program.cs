@@ -4,6 +4,7 @@ using BEapp.Interface;
 using BEapp.Middleware;
 using BEapp.Repository;
 using BEapp.Service;
+using BEapp.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -66,6 +67,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 // 2. Đăng nhập DbContext vào hệ thống Dependency Injection
 builder.Services.AddDbContext<AppDbContext>(options =>
 	options.UseSqlServer(connectionString));
+builder.Services.AddHostedService<ManualModeResetService>();
 var app = builder.Build();
 app.UseCors("AllowAll"); // Phải nằm TRƯỚC MapHub và MapControllers
 

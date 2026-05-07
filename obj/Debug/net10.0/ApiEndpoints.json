@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "BEapp.Controllers.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Auth/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BEapp.Controllers.AuthController\u002BChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEapp.Controllers.AuthController",
     "Method": "ControlPump",
     "RelativePath": "api/Auth/ControlPump",
     "HttpMethod": "POST",
@@ -10,6 +26,22 @@
       {
         "Name": "request",
         "Type": "BEapp.Controllers.AuthController\u002BPumpRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEapp.Controllers.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Auth/ForgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BEapp.Controllers.AuthController\u002BForgotPasswordRequest",
         "IsRequired": true
       }
     ],
@@ -213,6 +245,48 @@
     "ContainingType": "BEapp.Controllers.HumidityController",
     "Method": "GetHistory",
     "RelativePath": "api/Humidity/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEapp.Controllers.OtpController",
+    "Method": "SendOtp",
+    "RelativePath": "api/Otp/Send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BEapp.Controllers.SendOtpRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEapp.Controllers.OtpController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/Otp/Verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BEapp.Controllers.VerifyOtpRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEapp.Controllers.PumpController",
+    "Method": "GetStatus",
+    "RelativePath": "api/Pump/Status",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -7,8 +7,10 @@ E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\BEapp.pdb
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Azure.Core.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Azure.Identity.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\BCrypt.Net-Next.dll
+E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\BouncyCastle.Cryptography.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Castle.Core.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\FluentAssertions.dll
+E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\MailKit.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
@@ -28,6 +30,7 @@ E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Microsoft.IdentityModel.Protoc
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Microsoft.OpenApi.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
+E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\MimeKit.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Moq.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 E:\TestBEApp\BEapp\obj\Release\net10.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
