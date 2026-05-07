@@ -25,8 +25,8 @@ namespace BEapp.Controllers
 		{
 			return Ok(new
 			{
-				isOn = _state.IsPumpOn,
-				isManualMode = _state.IsManualMode
+				PumpOnOrOff = _state.IsPumpOn,
+				IsManualMode = _state.IsManualMode
 			});
 		}
 	}

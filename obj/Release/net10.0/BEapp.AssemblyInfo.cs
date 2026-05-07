@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BEapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24d977d77ff6370c4e09aef1501cfe2a6ccc16b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4b862d1f2a600191e395cfb77311eb5a98612fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("BEapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BEapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
