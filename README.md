@@ -1,9 +1,32 @@
 ## 🧑‍🎓 Trải nghiệm người dùng và các chức năng
+---
 
+## 📑 Thông tin môn học
+
+| Mục | Thông tin |
+| :--- | :--- |
+| **Môn học** | Hệ Thống Nhúng Mạng Không Dây |
+| **Lớp** | NT131.Q24 |
+| **Giảng viên** | ThS. Lê Minh Khánh Hội |
+| **Nhóm thực hiện** | Nhóm 13 |
+| **Nhóm trưởng** | Phạm Đức Tài |
+
+---
+
+## 👨‍💻 Thành viên Nhóm 12
+
+| STT | Họ và tên | MSSV | Vai trò chính |
+| :--- | :--- | :--- | :--- |
+| 1 | **Phạm Đức Tài** | 24521557 | Nhóm trưởng / Backend |
+| 2 | Huỳnh Vũ Khánh Hưng | 24520592 | Thành viên / Android App |
+| 3 | Trần Sơn | 24521538 | Thành viên / Firmware ESP32 |
+| 4 | Trần Thế Hiệp | 24520485 | Thành viên / Tích hợp SignalR WebSocket |
+
+---
 ### 1. Tài khoản và bảo mật
 Hệ thống cung cấp đầy đủ các chức năng quản lý người dùng:
 * **Đăng ký tài khoản:** Xác thực định dạng email, kiểm tra trùng lặp `username`.
-* **Bảo mật:** Mật khẩu được mã hóa một chiều bằng thuật toán **SHA-256** trước khi lưu vào SQL Server.
+* **Bảo mật:** Mật khẩu được mã hóa một chiều bằng thuật toán **SHA-256** trước khi lưu vào SSMS.
 * **Duy trì đăng nhập:** Sử dụng **JWT (JSON Web Token)**, lưu trữ an toàn tại `SharedPreferences` giúp người dùng không cần đăng nhập lại nhiều lần.
 
 ---
