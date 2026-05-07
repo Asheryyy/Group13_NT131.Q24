@@ -33,7 +33,7 @@ Hệ thống cung cấp đầy đủ các chức năng quản lý người dùng
 
 ### 2. Dashboard — Màn hình chính
 Nơi giám sát thời gian thực với giao diện trực quan:
-* **Độ ẩm đất:** Hiển thị dạng biểu đồ Gauge tròn, tự động đổi màu theo trạng thái (Khô - Cần tưới - Đủ nước).
+* **Độ ẩm đất:** Hiển thị dạng biểu đồ.
 * **Môi trường:** Theo dõi nhiệt độ và độ ẩm không khí từ cảm biến DHT.
 * **Điều khiển nhanh:** Nút Toggle máy bơm ngay trên màn hình chính.
 * **Kết nối:** Chỉ báo trạng thái **ESP32 Online/Offline** thời gian thực.
@@ -68,7 +68,7 @@ Hệ thống hỗ trợ song song hai cơ chế điều khiển:
 | :--- | :--- |
 | **Phần cứng** | ESP32, Soil Moisture Sensor, DHT11/22, Relay Module |
 | **Firmware** | C++, Arduino Framework |
-| **Backend** | ASP.NET Core 7.0 (C#), EF Core |
+| **Backend** | ASP.NET Core 8.0 (C#), EF Core |
 | **Database** | SQL Server (SSMS) |
 | **Real-time** | SignalR (WebSocket) |
 | **Mobile App** | Android (Kotlin/Java), Retrofit2, MPAndroidChart |
@@ -78,7 +78,7 @@ Hệ thống hỗ trợ song song hai cơ chế điều khiển:
 
 ## 🚀 Hướng dẫn triển khai nhanh
 
-1.  **Phần cứng:** Kết nối cảm biến và Relay vào ESP32. Cấu hình WiFi trong file `config.h`.
-2.  **Database:** Chỉnh sửa `ConnectionStrings` trong `appsettings.json` của Backend, sau đó chạy lệnh `dotnet ef database update`.
-3.  **API:** Chạy Backend và copy địa chỉ IP/URL dán vào `Constants` của App Android.
+1.  **Phần cứng:** Kết nối cảm biến và Relay vào ESP32. Cấu hình WiFi trong file config.h.
+2.  **Database:** Chỉnh sửa ConnectionStrings trong appsettings.json của Backend, sau đó chạy lệnh `dotnet ef database update.
+3.  **API:** Chạy Backend và copy địa chỉ IP/URL dán vào Constants của App Android.
 4.  **Khởi động:** Nạp code cho ESP32 và cài đặt APK lên điện thoại để bắt đầu giám sát.
