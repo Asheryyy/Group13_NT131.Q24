@@ -61,7 +61,7 @@ Phần **lịch sử** giúp người dùng xem lại:
 
 ---
 
-### 6. Biểu đồ & phân tích độ ẩm
+### 6. Biểu đồ và phân tích độ ẩm
 
 Người dùng có thể **phân tích xu hướng** theo thời gian:
 
@@ -71,7 +71,7 @@ Người dùng có thể **phân tích xu hướng** theo thời gian:
 
 ---
 
-### 7. Cài đặt ngưỡng & thiết bị
+### 7. Cài đặt ngưỡng và thiết bị
 
 Người dùng tùy chỉnh hoạt động của hệ thống:
 
@@ -146,7 +146,7 @@ dotnet run                  # Chạy server tại https://localhost:5001
 
 ---
 
-## 🎯 Mục đích & ý nghĩa đồ án
+## 🎯 Mục đích và ý nghĩa đồ án
 
 Đồ án **"Hệ thống tưới cây kết hợp phần mềm giám sát"** giúp nhóm:
 
