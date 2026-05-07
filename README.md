@@ -1,8 +1,8 @@
 ---
 
-## 🧑‍🎓 Trải nghiệm người dùng & các chức năng
+## 🧑‍🎓 Trải nghiệm người dùng và các chức năng
 
-### 1. Tài khoản & bảo mật
+### 1. Tài khoản và bảo mật
 
 Hệ thống cung cấp đầy đủ các chức năng về tài khoản:
 
