@@ -76,31 +76,40 @@ namespace BEapp.Controllers
 
 			_context.HumidityRecords.Add(record);
 
-			// 2. Logic Tự động & Ghi log Máy bơm
+			// Lấy config của thiết bị
+			var config = await _context.DeviceConfigs
+				.FirstOrDefaultAsync(x => x.DeviceName == data.DeviceName);
+
+			float lowerThreshold = config?.LowerThreshold ?? 30f;
+			float upperThreshold = config?.UpperThreshold ?? 80f;
+
+			// Logic tự động dùng ngưỡng từ config
 			string autoMessage = "";
-			if (data.Value < 30 && !_state.IsManualMode)
+			if (data.Value < lowerThreshold && !_state.IsManualMode)
 			{
 				autoMessage = "Hệ thống tự động: BẬT MÁY BƠM!";
-				// Ghi log máy bơm vào DB
 				_context.PumpLogs.Add(new PumpLog { Action = "BẬT", Source = "Tự động" });
 			}
-			else if (data.Value > 80 && !_state.IsManualMode)
+			else if (data.Value > upperThreshold && !_state.IsManualMode)
 			{
 				autoMessage = "Hệ thống tự động: TẮT MÁY BƠM!";
 				_context.PumpLogs.Add(new PumpLog { Action = "TẮT", Source = "Tự động" });
 			}
 
-			// 3. Lưu tất cả thay đổi vào Database (Chốt đơn!)
 			await _context.SaveChangesAsync();
 
-			// 4. Bắn SignalR cho Android như cũ
 			await _hubContext.Clients.All.SendAsync("ReceiveHumidityUpdate", data);
 			if (!string.IsNullOrEmpty(autoMessage))
 			{
 				await _hubContext.Clients.All.SendAsync("ReceiveAutoLog", autoMessage);
 			}
 
-			return Ok();
+			// Trả về config cho ESP32
+			return Ok(new
+			{
+				lowerThreshold = lowerThreshold,
+				upperThreshold = upperThreshold
+			});
 		}
 		[HttpGet]
 		public async Task<IActionResult> GetAllDataHistory()

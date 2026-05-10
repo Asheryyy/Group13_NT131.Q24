@@ -17,5 +17,6 @@ namespace BEapp.Data.DataBase
 		public DbSet<PumpLog> PumpLogs { get; set; }
 		public DbSet<WeatherLog> WeatherLogs { get; set; }
 		public DbSet<OtpRecord> OtpRecords { get; set; }
+		public DbSet<DeviceConfig> DeviceConfigs { get; set; }
 	}
 }
