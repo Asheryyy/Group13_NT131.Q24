@@ -3,6 +3,7 @@ using BEapp.Models.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using static BEapp.Interface.ISystemCreate;
+using Microsoft.EntityFrameworkCore;
 
 namespace BEapp.Controllers
 {
@@ -28,6 +29,16 @@ namespace BEapp.Controllers
 				PumpOnOrOff = _state.IsPumpOn,
 				IsManualMode = _state.IsManualMode
 			});
+		}
+		// GET: api/Pump/History
+		[HttpGet("History")]
+		public async Task<IActionResult> GetPumpHistory()
+		{
+			var history = await _context.PumpLogs
+				.OrderByDescending(x => x.Timestamp)
+				.Take(50)
+				.ToListAsync();
+			return Ok(history);
 		}
 	}
 }
